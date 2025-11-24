@@ -2,14 +2,14 @@
 
 A command-line tic-tac-toe game for two players, built with Go following TDD principles.
 
-- Instructions for running the app
+- Instructions for running the app:
 Run `make build ` and then run `./bin/tictactoe`
-- A brief description of your approach
+- A brief description of your approach:
 Leveraged spec driven development with an AI coding assistant
-- What AI tools you used and how
+- What AI tools you used and how:
 Spec kit for spec driven development
 Claude Code with the Sonnet 4.5 LLM model
-- Anything that didn’t go as planned or you'd improve with more time
+- Anything that didn’t go as planned or you'd improve with more time:
 I went for a simple terminal based app. With more time, I'd look into a buildout of a fullstack application with a frontend and backend with a network mode for players to play over the Internet.
 The UI for the column indices on the board display could be centered. With more time, I'd revisit the original spec with spec kit to include centered labels for the board display and see what new tasks are generated from the plan.
 
