@@ -1,0 +1,53 @@
+run:
+  timeout: 5m
+  tests: true
+  modules-download-mode: readonly
+
+linters:
+  enable:
+    - gofmt          # Code formatting
+    - govet          # Suspicious constructs
+    - staticcheck    # Advanced static analysis
+    - errcheck       # Unchecked errors
+    - gosimple       # Simplifications
+    - ineffassign    # Unused assignments
+    - gocyclo        # Cyclomatic complexity
+    - gofumpt        # Stricter gofmt
+    - misspell       # Spelling
+    - gocritic       # Opinionated checks
+    - funlen         # Function length
+    - gocognit       # Cognitive complexity
+    - dupl           # Code duplication
+    - goconst        # Repeated strings that could be constants
+  disable-all: false
+
+linters-settings:
+  gocyclo:
+    min-complexity: 10  # Constitution requirement: complexity ≤10
+
+  funlen:
+    lines: 50           # Constitution requirement: functions ≤50 lines
+    statements: 40
+
+  gocognit:
+    min-complexity: 15
+
+  dupl:
+    threshold: 100
+
+  goconst:
+    min-len: 3
+    min-occurrences: 3
+
+issues:
+  exclude-use-default: false
+  max-issues-per-linter: 0
+  max-same-issues: 0
+
+  exclude-rules:
+    # Exclude some linters from running on test files
+    - path: _test\.go
+      linters:
+        - gocyclo
+        - funlen
+        - dupl
