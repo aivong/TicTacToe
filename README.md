@@ -3,7 +3,7 @@
 A command-line tic-tac-toe game for two players, built with Go following TDD principles.
 
 - Instructions for running the app:
-Run `make build ` and then run `./bin/tictactoe`
+Run `make build` and then run `./bin/tictactoe`
 - A brief description of your approach:
 Leveraged spec driven development with an AI coding assistant
 - What AI tools you used and how:
