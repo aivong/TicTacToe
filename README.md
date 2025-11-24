@@ -10,7 +10,7 @@ Leveraged spec driven development with an AI coding assistant
 Spec kit for spec driven development
 Claude Code with the Sonnet 4.5 LLM model
 - Anything that didn’t go as planned or you'd improve with more time:
-I went for a simple terminal based app. With more time, I'd look into a buildout of a fullstack application with a frontend and backend with a network mode for players to play over the Internet.
+I went for a simple terminal based app with a terminal UI library. With more time, I'd look into a buildout of a fullstack application with a frontend and backend with a network mode for players to play over the Internet.
 The UI for the column indices on the board display could be centered. With more time, I'd revisit the original spec with spec kit to include centered labels for the board display and see what new tasks are generated from the plan.
 
 ## Features
